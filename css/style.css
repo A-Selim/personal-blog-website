@@ -1,0 +1,30 @@
+@import "card.css";
+
+body {
+    margin: auto;
+}
+
+* a, a:visited {
+    text-decoration: none;
+    color: #000; /* TO DO: change it if make color for each anchor */
+}
+
+.navbar {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    background-color: aqua;
+    margin-bottom: 40px;
+}
+
+.navbar  > a {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.blog-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 250px) 100px;
+    grid-gap: 50px;
+}
