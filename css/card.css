@@ -1,3 +1,10 @@
+.blog-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 250px) 100px;
+    grid-row-gap: 50px;
+}
+
 .card {
     grid-column: 2/6;
     display: flex;
@@ -16,12 +23,16 @@
     padding: 0 20px;
 }
 
-.interest {
+.card-interest {
     text-transform: uppercase;
+    color: #6B6B6E;
+    font-size: 12px;
+    font-weight: lighter;
 }
 
 .card-article {
     margin: 10px 0;
+    text-align: justify;
 }
 
 .card-footer {
@@ -31,19 +42,22 @@
 
 .author-info {
     width: 50%;
+    height: 40px;
     display: flex;
     align-items: center;
 }
 
-.author-img {
+.author-avatar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
-.author-name {
-    color: red;
+.author-name, .read-more {
+    font-size: 17px;
+    color: #007AE9;
+    font-weight: normal;
 }
 
 .read-more {
