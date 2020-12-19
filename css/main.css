@@ -53,6 +53,10 @@ form {
     color: #007AE9;
 }
 
+#submit:hover {
+    cursor: pointer;
+}
+
 footer {
     display: flex;
     justify-content: space-between;

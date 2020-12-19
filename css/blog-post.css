@@ -163,7 +163,7 @@ blockquote {
 	.paragraph {
 		grid-column: 1;
 		font-size: 15px;
-		text-align: justify;
+		text-align: left;
 	}
 
 	figcaption {
