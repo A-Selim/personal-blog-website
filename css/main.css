@@ -10,3 +10,119 @@
     text-decoration: none;
     color: #000000;
 }
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.newsletter-title > img {
+    margin-right: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom:50px;
+}
+
+.name, .email {
+    margin-right: 20px;
+    font-size: 1em;
+}
+
+#name, #email {
+    width: 400px;
+    font-size: 1em;
+}
+
+#submit {
+    font-size: 1em;
+    width: 110px;
+    background-color: #ffffff;
+    color: #007AE9;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3d3b3c;
+    height: 100px;
+}
+
+.social-pages {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+
+}
+
+.blog-name-footer {
+    letter-spacing: 3px;
+    font-size: 40px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: #63c132;
+    margin-left: 20px;
+}
+
+footer > div > a > img {
+    margin: 10px;
+    width: 35px;
+}
+
+@media (max-width: 425px) {
+    footer {
+        flex-direction: column;
+        justify-items: center;
+        height: 100%;
+    }
+
+    .social-pages {
+        flex-direction: column;
+    }
+
+    .blog-name-footer {
+        font-size: 30px;
+        margin: 30px auto;
+    }
+
+    footer > div > a > img {
+        margin: 20px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    form {
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .name, .email {
+        margin-bottom: 20px;
+        font-size: 1em;
+    }
+
+    #name, #email {
+        width: 90vw;
+        font-size: 1em;
+
+    }
+
+    #submit {
+        font-size: 1em;
+        width: 110px;
+        align-self: center;
+    }
+}
