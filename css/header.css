@@ -1,0 +1,40 @@
+.blog-name {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 50px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: #63c132;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 150px);
+    grid-template-rows: 70px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.navbar  > a {
+    font-size: 30px;
+    color: #3d3b3c;
+}
+
+@media (max-width: 425px) {
+    .blog-name {
+        letter-spacing: 1px;
+        font-size: 40px;
+    }
+
+    .navbar {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: repeat(3, 40px);
+    }
+
+    .navbar  > a {
+        font-size: 25px;
+    }
+}

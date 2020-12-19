@@ -1,5 +1,5 @@
+@import "header.css";
 @import "card.css";
-@import "navbar.css";
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
 
 * {
@@ -9,13 +9,4 @@
 * a {
     text-decoration: none;
     color: #000000;
-}
-
-.blog-name {
-    text-align: center;
-    letter-spacing: 3px;
-    font-size: 50px;
-    font-weight: lighter;
-    text-transform: capitalize;
-    color: #63c132;
 }

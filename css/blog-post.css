@@ -1,5 +1,5 @@
 @import "main.css";
-@import "navbar.css";
+@import "header.css";
 
 .blog-post {
     display: grid;
@@ -9,7 +9,8 @@
 
 .article-title {
     grid-column: 1/4;
-    grid-row: 1;
+	grid-row: 1;
+	margin-bottom: 50px;
     font-size: 35px;
     text-transform: capitalize;
 }
@@ -37,54 +38,48 @@
     margin: 5px;
 }
 
-  .article-title {
-    grid-column: 1/4;
-    font-size: 30px;
-    margin-bottom: 50px;
-  }
+.article-img-fill {
+	grid-column: 1/4;
+	width: 100%;
+	margin: auto;
+}
 
-  .article-img-fill {
-    grid-column: 1/4;
-    width: 100%;
-    margin: auto;
-  }
+.paragraph {
+	grid-column: 1/4;
+	font-size: 20px;
+	text-align: justify;
+}
 
-  .paragraph {
-    grid-column: 1/4;
-    font-size: 20px;
-    text-align: justify;
-  }
+figcaption {
+	text-align: center;
+	color: #5e5e5b;
+}
 
-  figcaption {
-    text-align: center;
-    color: #5e5e5b;
-  }
+figcaption > a {
+	color: #fe5f55;
+}
 
-  figcaption > a {
-      color: #fe5f55;
-  }
+.part-title {
+	grid-column: 1/4;
+	font-size: 25px;
+}
 
-  .part-title {
-    grid-column: 1/4;
-    font-size: 25px;
-  }
+.article-img-half {
+	grid-column: 2/3;
+	width: 100%;
+	margin: auto;
+}
 
-  .article-img-half {
-    grid-column: 2/3;
-    width: 100%;
-    margin: auto;
-  }
+.link-in-box {
+	grid-column: 1/4;
+	display: flex;
+	height: 170px;
+	border: 1px solid #a3a3a0;
+}
 
-  .link-in-box {
-    grid-column: 1/4;
-    display: flex;
-    height: 170px;
-    border: 1px solid #a3a3a0;
-  }
-
-  .imgbox {
-      width: 250px;
-  }
+.imgbox {
+	width: 250px;
+}
 
 .linkbox {
     padding: 0 10px;
@@ -95,17 +90,17 @@
 }
 
 .linkbox-header {
-  font-size: 20px;
+  	font-size: 20px;
 }
 
 .linkbox-brief {
-  font-size: 18px;
-  font-weight: 100;
+	font-size: 18px;
+	font-weight: 100;
 }
 
 .linkbox-website {
-  font-size: 15px;
-  color: #fe5f55;
+	font-size: 15px;
+	color: #fe5f55;
 }
 
 blockquote {
@@ -118,13 +113,115 @@ blockquote {
 }
 
 .sperator {
-  grid-column: 2/3;
-  margin-top: 50px;
-  border-bottom: 2px solid #a3a3a0;
+	grid-column: 2/3;
+	margin-top: 50px;
+	border-bottom: 2px solid #a3a3a0;
 }
 
 .real-author {
-  grid-column: 1/4;
-  margin: 50px 50px;
-  text-align: center;
+	grid-column: 1/4;
+	margin: 50px 50px;
+	text-align: center;
+}
+
+@media (max-width: 425px) {
+    .blog-post {
+		grid-template-columns: 300px;
+	}
+
+	.article-title {
+		grid-column: 1;
+		margin-bottom: 30px;
+		font-size: 25px;
+	}
+
+	.author-info {
+		grid-row: 2;
+	}
+
+	.author-about {
+		grid-column: 1;
+		font-size: 15px;
+	}
+
+	.share-btn {
+		grid-column: 1;
+		grid-row: 4;
+		justify-self: end;
+	}
+
+	.share-btn > a > img {
+		width: 18px;
+	}
+
+	.article-img-fill {
+		grid-column: 1;
+		width: 100%;
+		margin: auto;
+	}
+
+	.paragraph {
+		grid-column: 1;
+		font-size: 15px;
+		text-align: justify;
+	}
+
+	figcaption {
+		font-size: 10px;
+	}
+
+	.part-title {
+		grid-column: 1;
+		font-size: 20px;
+		font-weight: 900;
+	}
+
+	.article-img-half {
+		grid-column: 1;
+		width: 75%;
+		text-align: center;
+	}
+
+	.link-in-box {
+		grid-column: 1;
+		flex-direction: column;
+		height: 100%;
+		font-size: 18px;
+	}
+
+	.imgbox {
+		width: 100%;
+		height: 200px;
+	}
+
+	.linkbox > h2, h3, h4 {
+		margin: 10px;
+	}
+
+	.linkbox-header {
+		font-size: 0.9em;
+  	}
+
+	.linkbox-brief {
+		font-size: 0.8em;
+	}
+
+	.linkbox-website {
+		font-size: 0.7em;
+	}
+
+	blockquote {
+		grid-column: 1;
+		font-size: 15px;
+	}
+
+	.sperator {
+		grid-column: 1;
+		margin: 50px 100px;
+	}
+
+	.real-author {
+		grid-column: 1;
+		margin: 0px 0px 50px;
+	}
 }

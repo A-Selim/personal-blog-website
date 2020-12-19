@@ -38,6 +38,7 @@
 .card-footer {
     display: flex;
     align-items: center;
+    margin: 40px 0px 30px;
 }
 
 .author-info {
@@ -62,4 +63,59 @@
 
 .read-more {
     margin-left: auto;
+}
+
+@media (max-width: 425px) {
+    .blog-cards {
+        grid-template-columns: 300px;
+        grid-template-rows: repeat(6, 1fr) 10vh;
+        grid-row-gap: 5vh;
+        justify-content: center;
+    }
+
+    .card {
+        grid-column: 1;
+        flex-direction: column;
+    }
+
+    .card-img {
+        width: 300px;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .card-article {
+        line-height: 1.6;
+    }
+
+    .card-footer {
+        margin: 40px 0px 30px;
+    }
+
+    .author-avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .author-name, .read-more {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 1024px) {
+    .blog-cards {
+        grid-template-columns: 80px repeat(6, 1fr) 80px;
+        grid-template-rows: repeat(6, 1fr) 10vh;
+    }
+
+    .card {
+        grid-column: 2/8;
+    }
+
+    .card-img {
+        height: 100%;
+    }
+
+    .card-article {
+        line-height: 1.6;
+    }
 }
