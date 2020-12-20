@@ -24,7 +24,7 @@
     color: #3d3b3c;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 449px) {
     .blog-name {
         letter-spacing: 1px;
         font-size: 40px;
